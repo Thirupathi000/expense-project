@@ -64,8 +64,11 @@ rm -rf /app/* # remove the existing code
 unzip /tmp/backend.zip &>>$LOG_FILE
 VALIDATE $? "Extracting backend application code"
 
+
+
 npm install &>>$LOG_FILE
-cp root/expense-proSject/backend.service /etc/systemd/system/backend.service
+
+cp /root/expense-project/backend.service /etc/systemd/system/backend.service
 
 # load the data before running backend
 
