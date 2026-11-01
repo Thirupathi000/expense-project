@@ -68,8 +68,7 @@ VALIDATE $? "Extracting backend application code"
 
 npm install &>>$LOG_FILE
 
-cp /root/expense-project/backend.service /etc/systemd/system/backend.service
-
+cp /root/expense-project/expense.conf /etc/nginx/default.d/expense.conf
 # load the data before running backend
 
 dnf install mysql -y &>>$LOG_FILE
